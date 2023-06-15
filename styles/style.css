@@ -1,4 +1,187 @@
+@import url('https://fonts.googleapis.com/css?family=Quattrocento+Sans:400,400i,700,700i');
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
 body {
-    background-color: black;
-    color: aliceblue;
+    min-height: 100vh;
+    background-color: #fff;
+    margin: 0px;
+    color: #010101;
+    font-family: 'Quattrocento Sans', sans-serif;
+}
+
+li {
+    display: inline-block;
+}
+
+.top-header .container .links li {
+    color: #fff;
+}
+
+.offer {
+    position: relative;
+    left: -38px;
+    display: flex;
+    align-items: center;
+
+}
+
+.links {
+
+    display: flex;
+    align-items: center;
+}
+
+.links li {
+    font-weight: bold;
+    margin-right: 24px;
+    border-right: #fff solid;
+    padding-right: 8px;
+    border-width: 2px;
+}
+
+.offer img {
+    margin-right: 8px;
+}
+
+.top-header {
+    background-color: #010101;
+    height: 60px;
+    display: flex;
+    color: #fff !important;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1160px;
+
+}
+
+.top-header .container {
+    display: flex;
+    align-items: space-between !important;
+}
+
+.phone {
+    margin-left: 32px;
+}
+
+.top-header a {
+    color: #fff;
+}
+
+.main-header a {
+    color: black;
+}
+
+.main-header {
+    color: black;
+    display: flex;
+    height: 120px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    justify-content: center;
+}
+
+.logo {
+    margin-left: 42px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.logo img {
+    display: block;
+    padding: 6px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon-links {
+    margin-right: 24px;
+    margin-left: 115px;
+}
+
+.main-header .h-button a {
+    color: #D33A32;
+}
+
+.nav-links li {
+    margin-left: 35px;
+}
+
+.icon-links img {
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    margin: 15px;
+}
+
+footer {
+    top: 100%;
+    position: sticky;
+}
+
+.main-footer {
+    background-color: #202020;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main-footer .container {
+    padding-top: 90px;
+    padding-bottom: 60px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.about-us,
+.adress,
+.contacts {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 370px;
+}
+
+.footer-title {
+    font-size: 24px;
+    font-weight: bold;
+    border-bottom: 4px solid #D33A32;
+}
+
+.icon-text {
+    display: flex;
+    align-items: center;
+}
+
+.icon-text img {
+    display: block;
+    margin-right: 8px;
+}
+
+.bottom-footer {
+    background-color: #2C2C2C;
+    color: #fff;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.bottom-footer h3 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
 }
