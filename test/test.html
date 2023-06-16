@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Menu Example</title>
+    <style>
+        #menuToggle {
+            display: none;
+        }
+
+        #menuButton {
+            cursor: pointer;
+            display: inline-block;
+            padding: 10px;
+            background-color: #ddd;
+            border: none;
+        }
+
+        #menuContainer {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+        }
+
+        #menuContainer ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            padding: 20px;
+        }
+
+        #menuContainer ul li {
+            margin-bottom: 10px;
+        }
+
+        #menuToggle:checked+#menuButton+#menuContainer {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="checkbox" id="menuToggle">
+    <label for="menuToggle" id="menuButton">Toggle Menu</label>
+    <div id="menuContainer">
+        <ul>
+            <li>Option 1</li>
+            <li>Option 2</li>
+            <li>Option 3</li>
+        </ul>
+    </div>
+
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const menuContainer = document.getElementById('menuContainer');
+        const menuButton = document.getElementById('menuButton');
+
+        menuButton.addEventListener('click', function () {
+            menuToggle.checked = !menuToggle.checked;
+            if (menuToggle.checked) {
+                menuContainer.style.display = 'block';
+            } else {
+                menuContainer.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+
+</html>
