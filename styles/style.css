@@ -155,6 +155,7 @@ body {
     position: fixed;
     left: 0px;
     right: 0px;
+    height: 180px;
 }
 
 .main-header {
@@ -206,6 +207,12 @@ body {
 }
 
 
+@media (min-width: 768px) {
+    .hidden-navigation {
+        display: none !important;
+    }
+
+}
 
 .hidden-navigation {
     background-color: #F8F9FA;
@@ -334,10 +341,38 @@ body {
 
 }
 
+
+@media (min-width: 768px) {
+    .hidden-navigation {
+        display: none !important;
+    }
+
+}
+
 /*Content--------------------------------------------*/
 
 .content {
-    margin-top: 171px;
+    margin-top: 172px;
+}
+
+.start-banner {
+    display: flex;
+    justify-content: center;
+    height: 844px;
+    background: url(/images/banner1.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.next-banner {
+    height: 100vh;
+    background: #D33A32;
+}
+
+.banner-text h1,
+p {
+    color: #fff;
 }
 
 /*Footer--------------------------------------------*/
