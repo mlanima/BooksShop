@@ -72,6 +72,8 @@ body {
 }
 
 .offer {
+    position: relative;
+    left: -4px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -109,6 +111,11 @@ body {
 }
 
 @media (max-width: 767px) {
+
+    .offer {
+        left: 0px;
+    }
+
     .phone {
         display: none;
     }
@@ -208,6 +215,8 @@ body {
 
 
 @media (min-width: 768px) {
+
+
     .hidden-navigation {
         display: none !important;
     }
@@ -296,6 +305,12 @@ body {
 }
 
 @media (max-width: 767px) {
+
+    .main-header {
+        height: 100px;
+    }
+
+
     .navigation ul {
         display: none;
     }
@@ -351,9 +366,12 @@ body {
 
 /*Content--------------------------------------------*/
 
+
 .content {
     margin-top: 172px;
 }
+
+/*Content/StartBanner--------------------------------------------*/
 
 .start-banner {
     display: flex;
@@ -365,9 +383,10 @@ body {
 
 }
 
-.next-banner {
-    height: 100vh;
-    background: #D33A32;
+
+.banner-text h1 {
+    margin: 0px;
+    font-size: 48px;
 }
 
 .banner-text h1,
@@ -375,7 +394,304 @@ p {
     color: #fff;
 }
 
-/*Footer--------------------------------------------*/
+.banner-text p {
+    font-size: 18px;
+}
+
+.start-banner .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.shop-button {
+    background: #D33A32;
+    color: #fff;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.shop-button a:hover {
+    color: unset;
+}
+
+
+
+@media (max-width: 768px) {
+
+    .start-banner {
+        height: calc(100vh - 150px);
+    }
+
+    .content {
+        margin-top: 152px;
+    }
+
+    .start-banner .container {
+        align-items: center;
+    }
+
+}
+
+/*Content/Genres--------------------------------------------*/
+
+.genres-banner {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.genres-banner .container {
+    max-width: 1190px;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.genres-banner .genres-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.genre {
+    width: 370px;
+    height: 516px;
+    margin: 13px;
+    border: 1px solid #010101;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.genre .img-container {
+    padding-left: 4px;
+    padding-top: 4px;
+    display: flex;
+    align-items: flex-start;
+    overflow: hidden;
+}
+
+.genre img {
+    width: 100%;
+    display: block;
+}
+
+.genre .genre-button {
+    background: #D33A32;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 400px) {
+    .genre {
+        width: 274px;
+        height: 377px;
+    }
+}
+
+
+
+/*Content/ChosenBooksBanner--------------------------------------------*/
+
+.chosen-books-banner {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 90px;
+    padding-top: 60px;
+}
+
+.chosen-books-banner .container {
+    flex-direction: column;
+    align-items: center;
+}
+
+.chosen-books-hello {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    flex-grow: 1;
+    padding-bottom: 60px;
+}
+
+.chosen-books-banner p {
+    color: #A2A2A2;
+    font-size: 18px;
+    margin: 0px;
+    line-height: 22px;
+}
+
+.chosen-books-banner h1 {
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 22px;
+}
+
+
+.chosen-books-banner p {
+    text-align: center;
+}
+
+.top-buttons {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    margin-top: 60px;
+}
+
+.top-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #D33A32;
+    color: #fff;
+    font-size: 18px;
+    padding: 8px 24px 8px 24px;
+}
+
+
+@media (max-width: 600px) {
+
+    .top-buttons {
+        flex-direction: column;
+
+    }
+
+    .top-button {
+        margin: 4px;
+    }
+
+}
+
+/*Content/ChosenBooksBanner/ChosenBooksRow----------------------------------------------*/
+
+.chosen-books-row {
+    align-self: stretch;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.book {
+    width: 270px;
+    height: 440px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.book-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 106px;
+    color: #000;
+    background: #F5F5F5;
+}
+
+.book .img-container {
+
+    display: flex;
+    align-items: flex-start;
+    overflow: hidden;
+}
+
+.book-info h4,
+h3 {
+    font-weight: 400;
+    margin: 15px;
+}
+
+.book-info h4 {
+    font-size: 12px;
+}
+
+.book-info h3 {
+    font-size: 18px;
+}
+
+
+.book img {
+    width: 100%;
+    display: block;
+}
+
+@media (max-width: 1248px) {
+
+    .chosen-books-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+}
+
+/*Content/AboutUsBanner--------------------------------------------*/
+
+.about-us-banner {
+    display: flex;
+    justify-content: center;
+    height: 844px;
+    background: url(/images/banner-aboutus.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 180px;
+}
+
+.about-us-banner .container {
+    align-items: flex-start;
+}
+
+.about-us-banner .aboutus-title {
+    flex-basis: 30%;
+}
+
+.about-us-banner .aboutus-title h1 {
+    color: #fff;
+    font-size: 48px;
+    font-weight: 700px;
+}
+
+.about-us-banner .aboutus-text {
+    flex-basis: 60%;
+}
+
+.about-us-banner .aboutus-text p {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+@media (max-width: 767px) {
+
+    .about-us-banner {
+        height: 520px;
+        padding: 0px;
+        align-items: center;
+    }
+
+    .about-us-banner .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-us-banner .aboutus-text p {
+        text-align: center;
+        font-size: 18px;
+        line-height: 26px;
+    }
+}
+
+/*Footer-------------------------------------------------------*/
 
 .footer {
     margin-top: auto;
