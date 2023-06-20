@@ -799,3 +799,18 @@ h3 {
         font-size: 12px;
     }
 }
+
+audio {
+    width: 500px;
+    height: 200px;
+}
+
+.lol {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    /* background: red; */
+    bottom: 0;
+    right: 0;
+    cursor: pointer;
+}
