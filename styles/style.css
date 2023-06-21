@@ -376,7 +376,7 @@ body {
 .start-banner {
     display: flex;
     justify-content: center;
-    height: 844px;
+    height: calc(100vh - 170px);
     background: url(/images/banner1.jpg);
     background-size: cover;
     background-position: center;
@@ -577,6 +577,7 @@ p {
 .chosen-books-row {
     align-self: stretch;
     display: flex;
+    max-width: 1200px;
     justify-content: space-between;
     flex-wrap: nowrap;
 }
@@ -813,4 +814,84 @@ audio {
     bottom: 0;
     right: 0;
     cursor: pointer;
+}
+
+
+/*Catalog------------------------------------------------------------*/
+
+
+.title-banner {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    height: 23vh;
+    background: url(/images/banner1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.title-banner .container {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title-banner .title h1 {
+    font-size: 36px;
+    margin: 0px;
+    margin-bottom: 12px;
+}
+
+.pass {
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 24px 8px 24px;
+    background: #D33A32;
+}
+
+.current {
+    color: #000;
+}
+
+/*Catalog/catalog------------------------------------------------*/
+
+.catalog {
+    display: flex;
+    justify-content: center;
+}
+
+.catalog .container {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    max-width: 1200px;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.all-books {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.search-book {
+    height: 60px;
+    max-width: 970px;
+    width: 100%;
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
+    background: #F5F5F5;
+    border-radius: 20px;
+    border: #A2A2A2 solid 1px;
+    align-items: center;
+    padding-left: 30px;
+    color: #A2A2A2;
+    margin-bottom: 60px;
+
 }
