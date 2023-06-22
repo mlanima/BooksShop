@@ -377,7 +377,7 @@ body {
     display: flex;
     justify-content: center;
     height: calc(100vh - 170px);
-    background: url(images/banner1.jpg);
+    background: url(banner1.jpg);
     background-size: cover;
     background-position: center;
 
@@ -643,7 +643,7 @@ h3 {
     display: flex;
     justify-content: center;
     height: 844px;
-    background: url(images/banner-aboutus.jpg);
+    background: url(banner-aboutus.jpg);
     background-size: cover;
     background-position: center;
     padding-top: 180px;
@@ -825,7 +825,7 @@ audio {
     display: flex;
     justify-content: center;
     height: 23vh;
-    background: url(images/banner1.jpg);
+    background: url(banner1.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -1159,3 +1159,5 @@ audio {
         width: unset;
     }
 }
+
+.whyarentuworking {}
