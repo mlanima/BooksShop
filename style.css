@@ -825,7 +825,7 @@ audio {
     display: flex;
     justify-content: center;
     height: 23vh;
-    background: url(banner1.jpg);
+    background: url(banner.jpg);
     background-size: cover;
     background-position: center;
 }
