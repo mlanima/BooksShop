@@ -22,7 +22,7 @@
                     </div>
                     <div class="links">
                         <ul>
-                            <li><a href="#">ПРОФІЛЬ</a></li>
+                            <li><a href="login.html">ПРОФІЛЬ</a></li>
                             <li><a href="#">ЛОКАЦІЯ</a></li>
                             <li><a href="#">КОНТАКТИ</a></li>
                         </ul>
@@ -47,13 +47,43 @@
                             <li><a href="#">Наш сервіс</a></li>
                         </ul>
                         <div class="icon-links">
-                            <input type="checkbox" id="check">
-                            <label for="check" class="checkbutton">
-                                <i class="fa fa-bars"></i>
-                            </label>
-
                             <img href="#" src="/images/search.svg">
-                            <img href="#" src="/images/shopping_bag.svg">
+
+                            <input type="checkbox" id="checkshop">
+                            <label for="checkshop"><img src="/images/shopping_bag.svg"></label>
+                            <div class="shopping-cart">
+                                <div>
+                                    <div class="cart-start">
+                                        <div class="cart-title">
+                                            Кошик
+                                            <div>
+                                                <button class="myButton" id="myButton">Назад</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="undertitle-block">
+                                        <div class="orders-number">
+                                            <spank>0</spank>&nbsp;шт.
+                                        </div>
+                                        <div class="clear-cart">
+                                            Очистити
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order-details">
+                                    <div class="total-frame">
+                                        <div class="total-title">
+                                            Всього
+                                        </div>
+                                        <div class="total">
+                                            ₴&nbsp;<spank>0</spank>
+                                        </div>
+                                    </div>
+                                    <div class="button-pay">
+                                        До сплати
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -67,6 +97,18 @@
                     </ul>
                 </div>
             </div>
+            <script>
+                // Отримуємо посилання на кнопку і чекбокс
+                const myButton = document.getElementById("myButton");
+                const checkshop = document.getElementById("checkshop");
+
+                // Додаємо обробник подій до кнопки
+                myButton.addEventListener("click", function () {
+                    // Зняття позначки (unchecked) з чекбокса
+                    checkshop.checked = false;
+                });
+
+            </script>
             <script>
                 var checkbox = document.getElementById('check');
                 var hiddenNavigation = document.querySelector('.hidden-navigation');
